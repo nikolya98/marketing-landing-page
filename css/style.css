@@ -466,3 +466,130 @@ ul.portfolio__list {
   text-transform: uppercase;
   color: #242121;
 }
+
+.featured {
+  background-color: #F8F6FA;;
+}
+
+ul.featured__slider {
+    padding: 155px 0 115px;
+}
+
+.featured__slider .featured__slider-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 570px;
+}
+
+.featured__slider-title {
+  max-width: 600px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.featured__slider-link {
+  font-size: 36px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #242121;
+}
+
+.featured__slider-desc {
+  max-width: 600px;
+  margin-bottom: auto;
+}
+
+.slick-dots {
+  display: flex;
+}
+
+.slick-dots li + li {
+  margin-left: 13px;
+}
+
+.slick-dots button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background: none;
+  background-color: #242121;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.slick-active button {
+  width: 10px;
+  height: 10px;
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:none;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -95px;
+}
+
+.slick-next {
+  right: -95px;
+}
+
+.team {
+}
+
+.team__content {
+  padding: 120px 0 130px;
+}
+
+.team__title {
+  margin-bottom: 100px;
+}
+
+.team__members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__member {
+  flex: 0 0 370px;
+}
+
+.team__member-img {
+  margin-bottom: 35px;
+}
+
+.team__member-info {
+  text-align: center;
+}
+
+.team__member-info span {
+  display: block;
+}
+
+.team__member-name {
+  margin-bottom: 12px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+
+.team__member-position {
+  font-size: 12px;
+  line-height: 16px;
+  color: #373A39;
+}

@@ -74,6 +74,17 @@ body {
 .header__menu-logo {
   width: 79.1px;
   height: 64px;
+  position: relative;
+  z-index: 20;
+}
+
+.header__menu-btn {
+  display: none;
+  margin-bottom: 5px;
+  border: none;
+  background: transparent;
+  position: relative;
+  z-index: 20;
 }
 
 .header__menu-list {
@@ -803,4 +814,229 @@ ul.footer__social-links {
   text-align: center;
   color: #CCCCCC;
   background-color: #2A2C2B;
+}
+
+/* ------------ Адаптив ------------ */
+
+@media (max-width: 1440px) {
+  .section-wrapper {
+    padding: 100px 0;
+  }
+
+  .about .container {
+    display: block;
+  }
+
+  .about__title,
+  .expertise__title,
+  .magic__title,
+  .team__title,
+  .price__title,
+  .feedback__title {
+    margin-bottom: 50px;
+  }
+
+  .about__content {
+    max-width: 100%;
+  }
+
+  .magic__content {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-wrapper {
+    padding: 75px 0;
+  }
+
+  .expertise__feature {
+    max-width: 33.3333%;
+  }
+
+  .magic__content {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .expertise__info {
+    margin-bottom: 50px;
+  }  
+  
+  .expertise__features-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .expertise__feature {
+    max-width: 50%;
+    margin: 12px 0;
+  }
+
+  .magic {
+    background-image: none;
+  }
+
+  .magic__content {
+    max-width: 100%;
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section-wrapper {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .header__menu-btn {
+    display: block;
+  }
+
+  .header__menu-list {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    text-align: center;
+    background-color: #fff;
+
+    transform: translateY(-300%);
+    transition: all .8s;
+  }
+
+  ul.header__menu-list {
+    padding: 15px 0 15px;
+  }
+
+  .header__menu--active .header__menu-list {
+    transform: translateY(0%);
+  }
+
+  .header__menu--active .header__menu-item {
+    margin-left: 0;
+  }
+
+  .header__menu--active .header__menu-link {
+    display: block;
+    padding: 15px 0;
+    border: none;
+  }
+
+  .header__title {
+    font-size: 14px;
+    line-height: 18px;  
+  }
+
+  .header__title-prefix {
+      font-size: 50px;
+      line-height: 86px;
+  }
+
+  .about__title,
+  .expertise__title,
+  .magic__title,
+  .team__title,
+  .price__title,
+  .feedback__title {
+    margin-bottom: 30px;
+  }
+
+  .expertise__info {
+    display: block;
+  }
+
+  ul.expertise__gist {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .expertise__desc-text {
+    margin-bottom: 12px;
+  }
+
+  .expertise__features-list {
+    display: block;
+    max-width: 100%;
+  }
+
+  .expertise__feature {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .expertise__feature:last-child {
+    margin-bottom: 0;
+  }
+
+  .magic__content {
+    padding: 50px 0;
+  }
+
+  .magic__text {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .section-wrapper {
+    padding: 25px 0;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .header__title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .header__title-prefix {
+    font-size: 28px;
+    line-height: 48px;
+  }
+
+  .about__title,
+  .expertise__title,
+  .magic__title,
+  .team__title,
+  .price__title,
+  .feedback__title {
+    margin-bottom: 20px;
+  }
+
+  .expertise__info {
+    margin-bottom: 30px;
+  } 
+
+  .expertise__feature-title {
+    margin-bottom: 10px;
+  }
+
+  .expertise__feature {
+    margin-bottom: 20px;
+    padding-left: 60px;
+  }
+
+  .magic__content {
+    padding: 25px 0;
+  }
+}
+
+@media (max-height: 440px) {
+  .header__scroll-button {
+    display: none;
+  }
 }
